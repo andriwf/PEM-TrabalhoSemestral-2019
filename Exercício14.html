@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Exercício 14</title>
+</head>
+<body id="fundo">
+    <header>
+
+            <h1> TP 3 - Vetores - Exercício 14 </h1>
+    
+    </header>
+
+    <!-- barra de navegação do site -->
+    <nav id="menu">
+            <ul> <!-- criar a lista -->
+                <li><a href="index.html"> Voltar</a></li>
+            </ul>
+        </nav>
+
+    
+        <p>
+        14-) Faça um algoritmo que entre com 20 números no vetor e exiba-o ordenadamente (crescente).
+        </p>
+        
+    
+
+    <script>
+        var vet = [20];
+        var aux;
+        for(var x = 0; x < 20; x++){
+            vet[x] = parseInt(prompt("Digite um número para x" + x));
+        }
+        for(var x = 20; x >= 0; x--){
+            for(var y = 0; y < 20; y++){
+                if(vet[y] >= vet[y+1]){
+                    aux = vet[y];
+                    vet[y] = vet[y+1];
+                    vet[y+1] = aux;
+                }
+            }
+        }
+        document.write("Lista em ordem crescente: " + "<br>");
+        for(var x = 0; x < 20; x++){
+            document.write(vet[x] + "<br>");
+        }
+    </script>
+
+    
+
+</body>
+</html>

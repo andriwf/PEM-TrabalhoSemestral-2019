@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Exercício 07</title>
+</head>
+<body id="fundo">
+    <header>
+
+            <h1> TP 2 - Repetição - Exercício 07 </h1>
+    
+    </header>
+
+    <!-- barra de navegação do site -->
+    <nav id="menu">
+            <ul> <!-- criar a lista -->
+                <li><a href="index.html"> Voltar</a></li>
+            </ul>
+        </nav>
+
+    
+    <p>
+    7-) Faça um pseudocódigo que verifique se um número é primo ou não. <br>
+    </p>
+        
+   
+        <script>
+            var n = parseInt(prompt("Digite um número, para saber se ele é primo:"));
+            var cont = 0;
+            var x;
+            for(x = 1; x <= n; x++){
+                if(n % x == 0){
+                    cont++
+                }
+            }
+            if (cont == 2){
+                document.write("Numero " + n + " é primo");
+            }
+            else{
+                document.write("Número " + n + " não é primo");
+            }
+        </script>
+        
+            
+
+        
+  
+    
+    
+
+</body>
+</html>

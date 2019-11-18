@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Exercício 12</title>
+</head>
+<body id="fundo">
+    <header>
+
+            <h1> TP 3 - Vetores - Exercício 12 </h1>
+    
+    </header>
+
+    <!-- barra de navegação do site -->
+    <nav id="menu">
+            <ul> <!-- criar a lista -->
+                <li><a href="index.html"> Voltar</a></li>
+            </ul>
+        </nav>
+    
+        <p>
+        12-) Faça um algoritmo que carregue um vetor com 8 números inteiros. Calcule e exiba os números superiores a 50 e suas respectivas posições. Exiba a mensagem se não existir nenhum número nessa condição.
+        </p>
+        
+ 
+
+    <script>
+        var vet = [8];
+        var c = 0;
+        for(var x = 0; x < 8; x++){
+            vet[x] = parseInt(prompt("Digite um número para x" + x));
+        }
+        for(var x = 0; x < 8; x++){
+            if(vet[x] > 50){
+                document.write("Numero acima de 50: " + vet[x] + "<br>");
+                document.write("Posição: " + (x+1) + "<br>");
+            }
+            else {
+                c++;
+            }
+        }
+        if (c == 8){
+            document.write("Não existem numeros maiores que 50");
+        }
+    </script>
+        
+     
+
+    
+
+</body>
+</html>

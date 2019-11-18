@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Exercício 06</title>
+</head>
+<body id="fundo">
+    <header>
+
+            <h1> TP 2 - Repetição - Exercício 06 </h1>
+    
+    </header>
+
+    <!-- barra de navegação do site -->
+    <nav id="menu">
+            <ul> <!-- criar a lista -->
+                <li><a href="index.html"> Voltar</a></li>
+            </ul>
+        </nav>
+
+    
+    <p>
+    6-) Faça um pseudocódigo que receba o salário de 25 funcionários, calcule e exiba o novo salário desse funcionário com a bonificação e o auxílio-escola.
+    </p>
+    
+        <table class="comBordaSimples">
+            <tr>
+                <th>Salário</th>
+                <th>Bonificação</th>
+            </tr>
+            <tr>
+                <td>até R$ 500,00</td>
+                <td>5%</td>             
+            </tr>
+            <tr>
+                <td>Entre R$ 500,01 e R$ 1200,00</td>
+                <td>12%</td>               
+            </tr>
+            <tr>
+                <td>Acima de R$ 1200,00</td>
+                <td>Sem bonificação</td>               
+            </tr>
+            <tr>
+                <th>Salário</th>
+                <th>Auxilio-Escola</th>               
+            </tr>
+            <tr>
+                <td>Até R$ 600,00</td>
+                <td>R$ 150,00</td>               
+            </tr>
+            <tr>
+                <td>Mais de R$ 600,00</td>
+                <td>R$ 100,00</td>               
+            </tr>
+        </table>
+
+        <script>
+        for (var i = 1; i < 26; i++) {
+                var salario = prompt("Digite o salário do funcionário nº " + i);
+                                
+                    if (salario <= 500) {
+                        /*Bonificação*/
+                        salario = salario * 1.05                       
+                    }
+                    else if (salario >= 500 && salario <= 1200) {
+                        /*Bonificação*/
+                        salario = salario * 1.12                       
+                    }
+                    if (salario <= 600) {
+                        /*Auxilio Escola*/
+                        salario = salario + 150                      
+                    }
+                    else if (salario > 600) {
+                        /*Auxilio Escola*/
+                        salario = salario + 100                       
+                    }
+                    
+                    document.write("Salário final com Bonificação e Auxilio Escola: R$" + salario + "<br>");
+                
+                }
+            
+        </script>
+        
+
+        
+    
+    
+    
+
+</body>
+</html>
+
+

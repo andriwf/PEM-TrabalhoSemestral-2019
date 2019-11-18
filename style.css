@@ -1,0 +1,48 @@
+p {
+    text-align: justify;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:rgb(163, 230, 215);
+    list-style:none;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: block;
+
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid rgb(146, 252, 252);
+}
+
+#menu ul li a:hover {
+    background-color: cornflowerblue;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+#fundo{
+    background-color: rgb(112, 247, 252);
+}
+
+table.comBordaSimples {
+    border-collapse: collapse; /* CSS2 */
+    background: #FFFFF0;
+}
+ 
+table.comBordaSimples td {
+    border: 1px solid black;
+}
+ 
+table.comBordaSimples th {
+    border: 1px solid black;
+    background: #F0FFF0;
+}

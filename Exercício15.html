@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Exercício 15</title>
+</head>
+<body id="fundo">
+    <header>
+
+            <h1> TP 3 - Vetores - Exercício 15 </h1>
+    
+    </header>
+
+    <!-- barra de navegação do site -->
+    <nav id="menu">
+            <ul> <!-- criar a lista -->
+                <li><a href="index.html"> Voltar</a></li>
+            </ul>
+        </nav>
+
+    
+        <p>
+        15-) Entrar com vários números no vetor de tamanho máximo de 100 elementos, até digitar o número “0”. Imprimir quantos números iguais ao último número foram lidos. O limite de números é 100.
+        </p>
+        
+  
+
+    <script>
+        var vet = [100];
+        var n = 0;
+        var cont = 0;
+        var t = 0;
+        var a = 0;
+        do{
+            vet[a] = parseInt(prompt("Digite vários números, (digite 0 para parar):"));
+            if(vet[a] != 0){
+                n = vet[a];
+                a++;
+            }
+            else{
+                t = 1;
+            }
+        } while (t == 0);
+        for (var i = 0; i < a; i++){
+            if(vet[i] == n){
+                cont = cont + 1;
+            }
+        }
+        document.write("Numeros iguais ao ultimo digitado: " + (cont - 1));
+    </script>
+    
+
+</body>
+</html>
